@@ -1,0 +1,7 @@
+screen rotation 180º issue 
+
+https://www.programsbuzz.com/article/screen-rotation-issue-ubuntu-1804-lts-system-restart
+
+https://packages.debian.org/sid/iio-sensor-proxy
+
+https://bugs.launchpad.net/ubuntu/+source/iio-sensor-proxy/+bug/1726160

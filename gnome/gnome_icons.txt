@@ -1,0 +1,5 @@
+https://developer.gnome.org/integration-guide/stable/desktop-files.html.en
+
+https://wiki.gnome.org/HowDoI/AppFolders
+
+https://wiki.gentoo.org/wiki/Gnome_Applications_Folders

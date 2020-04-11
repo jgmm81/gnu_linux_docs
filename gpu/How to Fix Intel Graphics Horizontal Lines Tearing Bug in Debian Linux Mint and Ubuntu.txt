@@ -1,0 +1,23 @@
+https://www.youtube.com/watch?v=IJeX35wbZY4
+
+
+How to remove those horizontal screen tearing artifacts when playing a video file or 3D game on Intel graphics:
+
+How to Fix Nvidia Horizontal Lines Tearing Bug:
+https://youtu.be/oYWer86A20s
+
+How to Install Bumblebee Nvidia driver or plain Nvidia Driver in Debian:
+https://youtu.be/KUsnygrNUMw
+
+Please support my work on https://www.patreon.com/neoncipher
+-----------------------------------
+lspci -nn | egrep -i "3d|display|vga"
+sudo mkdir /etc/X11/xorg.conf.d
+sudo nano /etc/X11/xorg.conf.d/20-intel.conf
+---------------------------------
+Section "Device"
+   Identifier  "Intel Graphics"
+   Driver      "intel"
+   Option      "TearFree"    "true"
+EndSection
+

@@ -1,0 +1,67 @@
+#command line----------------------------
+#Notes goto: 
+#	http://tipsonubuntu.com/2017/05/03/re-enable-hibernate-ubuntu-17-04/
+#	http://tipsonubuntu.com/2018/04/28/change-lid-close-action-ubuntu-18-04-lts/
+#	http://ubuntuhandbook.org/index.php/2018/05/add-hibernate-option-ubuntu-18-04/
+
+sudo apt install pm-utils
+
+#Default Config----------------------------
+[Disable hibernate by default in upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=no
+
+[Disable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-key;org.freedesktop.login1;org.freedesktop.login1.hibernate-multiple-sessions;org.freedesktop.login1.hibernate-ignore-inhibit
+ResultActive=no
+
+
+#Step 1
+sudo gedit /var/lib/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla
+
+[Disable hibernate by default in upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+[Disable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-key;org.freedesktop.login1;org.freedesktop.login1.hibernate-multiple-sessions;org.freedesktop.login1.hibernate-ignore-inhibit
+ResultActive=yes
+
+
+#Step 2
+sudo gedit /etc/polkit-1/localauthority/10-vendor.d/com.ubuntu.desktop.pkla
+
+#paste info
+[Re-enable hibernate by default in upower]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+[Re-enable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate
+ResultActive=yes
+
+
+#Step 3
+Reboot
+
+
+
+
+#G1 HP EliteBook (Testing->errors)---------------------
+#Replace Default Config-------------------
+
+[Re-enable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.upower.hibernate
+ResultActive=yes
+
+[Re-enable hibernate by default in logind]
+Identity=unix-user:*
+Action=org.freedesktop.login1.hibernate;org.freedesktop.login1.handle-hibernate-key;org.freedesktop.login1;org.freedesktop.login1.hibernate-multiple-sessions;org.freedesktop.login1.hibernate-ignore-inhibit
+ResultActive=yes

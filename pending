@@ -1,0 +1,86 @@
+gnome maps ok
+
+bluetooth ok
+
+power management ok
+
+swap ok :: GNU.Linux/lvm_file_system
+
+hibernate ok :: GNU.Linux/power_management
+
+usb -1 ok ::  GNU.Linux/kernel/usb_and_devices/g1
+
+deja vu backup ok
+
+simple scan and printer(s) ok
+
+band board movistar ok
+
+addons gnome - 
+	Advanced Volume Mixer (set interated menu) ok
+	AlternateTab ok
+
+enable 3d support vmware ok :: GNU.Linux/VMware15
+
+tree terminal tool ok
+
+more updates ok
+
+new themes wallpapers ok
+
+touuch pad config (mouse) ok
+
+ultra iso (vm) ok
+
+update gimp ok
+
+fix gnome-system-monitor via snap ok
+
+update system, kernel 5, 18.04.3 ok
+
+update libre office 6.3 ok
+
+new adwaita theme gtk3 from gnome web ok
+
+gparted & meld is installed ok
+
+system update ok
+
+chage to main server (software & updates) ok
+
+fix gimp repository error ok
+
+installed unrar library ok
+
+installed sweet home 3d & enhanced logo (laucher) ok
+
+no more-> remove those horizontal screen tearing artifacts on Intel graphics ok :: GNU.Linux/gpu
+
+some os  and apps updates ok
+
+reenable hibernate option, 256mb video set (uefi), php7.2, apache2, vscode ok (LVL12-LVL13)
+
+grub no splash ok
+
+enhanced swap area (with canonial docs) to 20GiB ok
+
+htop, kdepartitionmanager ok
+
+authy new tokens ok
+
+use wayland UI -> check hibernate (no system crash, 1 case in very slow, the rest ok)
+
+set usb3 on load disable, return to x11 (problems with drap and drop in nautilus, gedit no go front window), new linux kernel 5.3.0-26-generic, vmware 15.5.1
+
+changes to the usb acpi configuration, the machine could not enter sleep mode (now it works fine)
+
+update to 18.04.4LTS
+
+remove skype -> using web.skype.com via chrome, set telegram repository and firefox web.telegram.org
+
+no (re-enable usb3 on load), updates fix the problem, apache2 service is stopped, linux kernel 5.3.0-40-generic, update libre office 6.4.1
+
+system updates, pending organze photos and videos
+
+system update, authy via native app (beta), pocket in firefox registered, fix gnome modal drag windows on libre office, changes in firefox hw_acceleration, again disable usb3 on load (check usb 3.0 if work), linux kernel 5.3.0-45-generic
+

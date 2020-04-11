@@ -1,0 +1,5 @@
+export http_proxy="http://proxy.wincor-nixdorf.com:81"
+export https_proxy="http://proxy.wincor-nixdorf.com:81"
+
+unset http_proxy
+unset https_proxy

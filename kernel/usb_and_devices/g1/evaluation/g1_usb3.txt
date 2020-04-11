@@ -1,0 +1,12 @@
+ls -l /sys/bus/usb/devices/usb3/3-0\:1.0/usb3-port1/power
+
+no -> echo "0" > "/sys/bus/usb/devices/usb3/3-0\:1.0/usb3-port1/power/autosuspend_delay_ms"
+
+echo 'usb3' | sudo tee /sys/bus/usb/drivers/usb/bind
+echo 'usb3' | sudo tee /sys/bus/usb/drivers/usb/unbind
+
+sudo crontab -e
+no -> @reboot echo 'usb3' > /sys/bus/usb/drivers/usb/unbind
+
+
+@reboot echo -1 > /sys/module/usbcore/parameters/autosuspend

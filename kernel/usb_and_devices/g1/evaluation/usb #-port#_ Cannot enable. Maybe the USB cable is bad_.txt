@@ -1,0 +1,17 @@
+Source
+https://forum.manjaro.org/t/occasional-usb-failure/31976/4
+
+
+thefallenrat
+Artix Linux Team Member | Badge Hunter
+Cliff1
+Sep '17
+
+I think maybe it has something to do with autosuspend? You can try disable it by editing /etc/default/grub and add this line to the GRUB_CMDLINE_LINUX :
+
+usbcore.autosuspend=-1
+
+After that, save it, run 'sudo update-grub' and reboot after it…
+
+
+https://www.zeppelinux.es/problemas-con-usb3-en-linux-habilitar-iommu/

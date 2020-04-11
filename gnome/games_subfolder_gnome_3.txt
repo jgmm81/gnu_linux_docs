@@ -1,0 +1,1 @@
+gsettings set org.gnome.desktop.app-folders.folder:/org/gnome/desktop/app-folders/folders/Games/ apps "['UT2004.desktop','gnome-chess.desktop','gnome-mahjongg.desktop','quake3.desktop','quadrapassel.desktop','sol.desktop','gweled.desktop','mame.desktop']"

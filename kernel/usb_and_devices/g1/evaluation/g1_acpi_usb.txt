@@ -1,0 +1,14 @@
+https://delightlylinux.wordpress.com/2017/12/05/fix-the-immediate-resume-following-suspend/
+
+cat /proc/acpi/wakeup
+
+lspci | grep USB
+-> 00:14.0 USB controller: Intel Corporation 8 Series USB xHCI HC (rev 04)
+-> 00:1d.0 USB controller: Intel Corporation 8 Series USB EHCI #1 (rev 04)
+
+no -> echo "EHC1" > /proc/acpi/wakeup
+echo "XHC" > /proc/acpi/wakeup
+
+sudo crontab -e
+no -> @reboot echo "EHC1" > /proc/acpi/wakeup
+no-> @reboot echo "XHC" > /proc/acpi/wakeup

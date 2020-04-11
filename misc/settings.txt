@@ -1,0 +1,12 @@
+->location	(off)
+->history	(off)
+->empty files	(only temp files 30 days)
+->mic		(off)
+
+->Firewall	(block)
+
+-----
+
+vlc 
+
+gimp calibre gnome-tweak-tool brasero skanlite transmission

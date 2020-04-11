@@ -1,0 +1,4 @@
+145c145
+<    if (!access_ok(VERIFY_WRITE, (void *)uAddr, size) ||
+---
+>    if (!access_ok((void *)uAddr, size) ||

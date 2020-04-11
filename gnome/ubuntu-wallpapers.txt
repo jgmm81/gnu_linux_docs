@@ -1,0 +1,10 @@
+https://launchpad.net/ubuntu/+source/ubuntu-wallpapers
+
+PATH---------------
+/usr/share/backgrounds
+
+INSTALL----------
+sudo apt install -y ubuntu-wallpapers-lucid ubuntu-wallpapers-oneiric ubuntu-wallpapers-quantal ubuntu-wallpapers-disco ubuntu-wallpapers-utopic ubuntu-wallpapers-precise ubuntu-wallpapers-bionic ubuntu-wallpapers-artful ubuntu-wallpapers-raring ubuntu-wallpapers-saucy ubuntu-wallpapers-karmic ubuntu-wallpapers-zesty ubuntu-wallpapers-maverick ubuntu-wallpapers-trusty ubuntu-wallpapers-yakkety ubuntu-wallpapers ubuntu-wallpapers-natty ubuntu-wallpapers-xenial ubuntu-wallpapers-wily ubuntu-wallpapers-cosmic ubuntu-wallpapers-vivid
+
+UNINSTALL (WARNNING MAKE FIRST SYSTEM BACKUP)-------
+sudo dpkg -r --force-all ubuntu-wallpapers-lucid ubuntu-wallpapers-oneiric ubuntu-wallpapers-quantal ubuntu-wallpapers-utopic ubuntu-wallpapers-precise ubuntu-wallpapers-bionic ubuntu-wallpapers-artful ubuntu-wallpapers-raring ubuntu-wallpapers-saucy ubuntu-wallpapers-karmic ubuntu-wallpapers-zesty ubuntu-wallpapers-maverick ubuntu-wallpapers-trusty ubuntu-wallpapers-yakkety ubuntu-wallpapers-natty ubuntu-wallpapers-xenial ubuntu-wallpapers-wily ubuntu-wallpapers-cosmic ubuntu-wallpapers-vivid

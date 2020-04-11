@@ -1,0 +1,12 @@
+http://fedora.c3sl.ufpr.br/linux/releases/25/Workstation/x86_64/iso/
+
+https://download.01.org/gfx/fedora/25/x86_64/
+
+....check graphics engine....
+$ loginctl show-session 2 -p Type
+
+Type                                                  
+Type=wayland
+
+new:f-eb.develop
+old:fproject.58ln202a3

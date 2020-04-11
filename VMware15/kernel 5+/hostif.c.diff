@@ -1,0 +1,25 @@
+77a78,91
+> 
+> #include <linux/time.h>
+> 
+> static inline void do_gettimeofday(struct timeval *tv)
+> {
+>       struct timespec64 now;
+> 
+>       ktime_get_real_ts64(&now);
+>       tv->tv_sec = now.tv_sec;
+>       tv->tv_usec = now.tv_nsec/1000;
+> }
+> 
+> 
+> 
+1641,1643c1655
+<    extern unsigned long totalram_pages;
+< 
+<    unsigned int totalPhysicalPages = totalram_pages;
+---
+>   unsigned int totalPhysicalPages = totalram_pages();
+3408c3420
+<    if (!access_ok(VERIFY_WRITE, p, size)) {
+---
+>    if (!access_ok(p, size)) {

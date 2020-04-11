@@ -1,0 +1,276 @@
+[sudo] password for uproject: 
+
+--------------------------- displaylink-debian -------------------------------
+
+DisplayLink driver installer for Debian and Ubuntu based Linux distributions:
+
+* Debian, Ubuntu, Elementary OS, Mint, Kali, Deepin and many more!
+* Full list of all supported platforms: http://bit.ly/2zrwz2u
+* When submitting a new issue, include Debug information
+
+Options:
+
+[I]nstall
+[D]ebug
+[R]e-install
+[U]ninstall
+[Q]uit
+
+Select a key: [i/d/r/u/q]: I
+
+-------------------------------------------------------------------
+
+Checking dependencies
+
+unzip is installed
+linux-headers-5.4.0-21-generic is installed
+dkms is installed
+lsb-release is installed
+linux-source is installed
+x11-xserver-utils is installed
+wget is installed
+
+Platform requirements satisfied, proceeding ...
+
+-------------------------------------------------------------------
+
+Please read the Software License Agreement available at: 
+https://www.displaylink.com/downloads/file?id=1369
+Do you accept?: [Y/n]: y
+
+Downloading DisplayLink Ubuntu driver:
+
+--2020-04-11 06:27:16--  https://www.displaylink.com/downloads/file?id=1369
+Resolving www.displaylink.com (www.displaylink.com)... 52.214.95.115, 34.252.102.94, 54.77.143.153, ...
+Connecting to www.displaylink.com (www.displaylink.com)|52.214.95.115|:443... connected.
+HTTP request sent, awaiting response... 303 See Other
+Location: http://assets.displaylink.com/live/downloads/software/f1369_DisplayLink%20USB%20Graphics%20Software%20for%20Ubuntu%205.2.zip?AWSAccessKeyId=AKIAJHGQWPVXWHEDJUEA&Expires=1586601438&Signature=YSa0xWF8LPK5sbcblWZz5DpoO9o%3D [following]
+--2020-04-11 06:27:18--  http://assets.displaylink.com/live/downloads/software/f1369_DisplayLink%20USB%20Graphics%20Software%20for%20Ubuntu%205.2.zip?AWSAccessKeyId=AKIAJHGQWPVXWHEDJUEA&Expires=1586601438&Signature=YSa0xWF8LPK5sbcblWZz5DpoO9o%3D
+Resolving assets.displaylink.com (assets.displaylink.com)... 52.218.41.155
+Connecting to assets.displaylink.com (assets.displaylink.com)|52.218.41.155|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12768730 (12M) [application/octet-stream]
+Saving to: ‘DisplayLink_Ubuntu_5.2.zip’
+
+DisplayLink_Ubuntu_5.2.zip                 100%[=====================================================================================>]  12,18M   965KB/s    in 14s     
+
+2020-04-11 06:27:33 (910 KB/s) - ‘DisplayLink_Ubuntu_5.2.zip’ saved [12768730/12768730]
+
+
+-------------------------------------------------------------------
+
+Preparing for install
+
+Archive:  DisplayLink_Ubuntu_5.2.zip
+  inflating: 5.2/displaylink-driver-5.2.14.run  
+  inflating: 5.2/DisplayLink USB Graphics Software for Ubuntu 5.2-Release Notes.txt  
+  inflating: 5.2/LICENSE             
+Creating directory displaylink-driver-5.2.14
+Verifying archive integrity...  100%   All good.
+Uncompressing DisplayLink Linux Driver 5.2.14  100%  
+
+-------------------------------------------------------------------
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  zlib1g-dev
+The following NEW packages will be installed:
+  libdrm-dev libelf-dev zlib1g-dev
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 338 kB of archives.
+After this operation, 1.646 kB of additional disk space will be used.
+Get:1 http://ve.archive.ubuntu.com/ubuntu focal/main amd64 libdrm-dev amd64 2.4.101-1 [126 kB]
+Get:2 http://ve.archive.ubuntu.com/ubuntu focal/main amd64 zlib1g-dev amd64 1:1.2.11.dfsg-2ubuntu1 [156 kB]
+Get:3 http://ve.archive.ubuntu.com/ubuntu focal/main amd64 libelf-dev amd64 0.176-1.1build1 [57,0 kB]
+Fetched 338 kB in 2s (151 kB/s)      
+Selecting previously unselected package libdrm-dev:amd64.
+(Reading database ... 167553 files and directories currently installed.)
+Preparing to unpack .../libdrm-dev_2.4.101-1_amd64.deb ...
+Unpacking libdrm-dev:amd64 (2.4.101-1) ...
+Selecting previously unselected package zlib1g-dev:amd64.
+Preparing to unpack .../zlib1g-dev_1%3a1.2.11.dfsg-2ubuntu1_amd64.deb ...
+Unpacking zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1) ...
+Selecting previously unselected package libelf-dev:amd64.
+Preparing to unpack .../libelf-dev_0.176-1.1build1_amd64.deb ...
+Unpacking libelf-dev:amd64 (0.176-1.1build1) ...
+Setting up libdrm-dev:amd64 (2.4.101-1) ...
+Setting up zlib1g-dev:amd64 (1:1.2.11.dfsg-2ubuntu1) ...
+Setting up libelf-dev:amd64 (0.176-1.1build1) ...
+Processing triggers for man-db (2.9.1-1) ...
+Cloning into 'evdi'...
+remote: Enumerating objects: 187, done.
+remote: Counting objects: 100% (187/187), done.
+remote: Compressing objects: 100% (107/107), done.
+remote: Total 1338 (delta 118), reused 141 (delta 80), pack-reused 1151
+Receiving objects: 100% (1338/1338), 804.40 KiB | 621.00 KiB/s, done.
+Resolving deltas: 100% (887/887), done.
+--2020-04-11 06:27:41--  https://crazy.dev.frugalware.org/evdi-all-in-one-fixes.patch
+Resolving crazy.dev.frugalware.org (crazy.dev.frugalware.org)... 85.10.194.195
+Connecting to crazy.dev.frugalware.org (crazy.dev.frugalware.org)|85.10.194.195|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 6947 (6,8K) [text/plain]
+Saving to: ‘evdi-all-in-one-fixes.patch’
+
+evdi-all-in-one-fixes.patch                100%[=====================================================================================>]   6,78K  --.-KB/s    in 0,001s  
+
+2020-04-11 06:27:43 (5,74 MB/s) - ‘evdi-all-in-one-fixes.patch’ saved [6947/6947]
+
+patching file .travis.yml
+Hunk #1 FAILED at 26.
+1 out of 1 hunk FAILED -- saving rejects to file .travis.yml.rej
+patching file Makefile
+Reversed (or previously applied) patch detected!  Skipping patch.
+1 out of 1 hunk ignored -- saving rejects to file Makefile.rej
+patching file library/Makefile
+Hunk #1 FAILED at 2.
+1 out of 1 hunk FAILED -- saving rejects to file library/Makefile.rej
+patching file module/Makefile
+Hunk #1 FAILED at 43.
+1 out of 1 hunk FAILED -- saving rejects to file module/Makefile.rej
+patching file module/evdi_drv.c
+Hunk #1 FAILED at 81.
+1 out of 1 hunk FAILED -- saving rejects to file module/evdi_drv.c.rej
+patching file module/evdi_drv.h
+Hunk #1 FAILED at 20.
+Hunk #2 FAILED at 51.
+Hunk #3 FAILED at 112.
+3 out of 3 hunks FAILED -- saving rejects to file module/evdi_drv.h.rej
+patching file module/evdi_gem.c
+Hunk #1 FAILED at 61.
+Hunk #2 FAILED at 254.
+Hunk #3 FAILED at 569.
+Hunk #4 FAILED at 581.
+4 out of 4 hunks FAILED -- saving rejects to file module/evdi_gem.c.rej
+CFLAGS="-Werror -Wextra -Wall -Wmissing-prototypes -Wstrict-prototypes -Wno-error=missing-field-initializers" make -C module 
+make[1]: Entering directory '/home/uproject/Temp/displaylink-debian-master/evdi/module'
+make -C /lib/modules/5.4.0-21-generic/build M=$PWD
+make[2]: Entering directory '/usr/src/linux-headers-5.4.0-21-generic'
+  AR      /home/uproject/Temp/displaylink-debian-master/evdi/module/built-in.a
+  CC [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi_drv.o
+  CC [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi_modeset.o
+  CC [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi_connector.o
+  CC [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi_encoder.o
+  CC [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi_main.o
+  CC [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi_fb.o
+  CC [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi_gem.o
+  CC [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi_painter.o
+  CC [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi_params.o
+  CC [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi_cursor.o
+  CC [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi_debug.o
+  CC [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi_ioc32.o
+  LD [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi.mod.o
+  LD [M]  /home/uproject/Temp/displaylink-debian-master/evdi/module/evdi.ko
+make[2]: Leaving directory '/usr/src/linux-headers-5.4.0-21-generic'
+make[1]: Leaving directory '/home/uproject/Temp/displaylink-debian-master/evdi/module'
+CFLAGS="-I../module -Werror -Wextra -Wall -Wmissing-prototypes -Wstrict-prototypes -Wno-error=missing-field-initializers " make -C library 
+make[1]: Entering directory '/home/uproject/Temp/displaylink-debian-master/evdi/library'
+cc -I../module -std=gnu99 -fPIC -I../module -Werror -Wextra -Wall -Wmissing-prototypes -Wstrict-prototypes -Wno-error=missing-field-initializers    -c -o evdi_lib.o evdi_lib.c
+cc evdi_lib.o -shared -Wl,-soname,libevdi.so.0 -o libevdi.so.1.6.4 -lc -lgcc 
+cp libevdi.so.1.6.4 libevdi.so
+make[1]: Leaving directory '/home/uproject/Temp/displaylink-debian-master/evdi/library'
+
+Installing driver version: 5.2
+
+DisplayLink Linux Software 5.2.14 install script called: install
+Distribution discovered: Ubuntu Focal Fossa (development branch)
+Installing
+Configuring EVDI DKMS module
+Registering EVDI kernel module with DKMS
+Building EVDI kernel module with DKMS
+Installing EVDI kernel module to kernel tree
+EVDI kernel module built successfully
+Installing x64-ubuntu-1604/DisplayLinkManager
+Installing libraries
+Installing firmware packages
+Installing licence file
+Adding udev rule for DisplayLink DL-3xxx/4xxx/5xxx/6xxx devices
+
+Please read the FAQ
+http://support.displaylink.com/knowledgebase/topics/103927-troubleshooting-ubuntu
+Installation complete!
+Adding udlfb to blacklist
+Adding udl to blacklist
+
+-------------------------------------------------------------------
+
+Performing post install steps
+
+Enable and start displaylink-driver service
+Created symlink /etc/systemd/system/multi-user.target.wants/displaylink-driver.service → /lib/systemd/system/displaylink-driver.service.
+Setup DisplayLink xorg.conf depending on graphics card
+Wrote X11 changes to: /etc/X11/xorg.conf.d/20-displaylink.conf
+
+-------------------------------------------------------------------
+
+Performing clean-up
+Removing redundant: "DisplayLink_Ubuntu_5.2.zip" file
+Removing redundant: "5.2" directory
+
+-------------------------------------------------------------------
+
+Install complete, please reboot to apply the changes
+After reboot, make sure to consult post-install guide! http://bit.ly/2TbZleK
+Reboot now? [Y/n] 
+
+###################################################
+
+
+--------------------------- displaylink-debian -------------------------------
+
+DisplayLink driver installer for Debian and Ubuntu based Linux distributions:
+
+* Debian, Ubuntu, Elementary OS, Mint, Kali, Deepin and many more!
+* Full list of all supported platforms: http://bit.ly/2zrwz2u
+* When submitting a new issue, include Debug information
+
+Options:
+
+[I]nstall
+[D]ebug
+[R]e-install
+[U]ninstall
+[Q]uit
+
+Select a key: [i/d/r/u/q]: U
+
+-------------------------------------------------------------------
+
+Checking dependencies
+
+unzip is installed
+linux-headers-5.4.0-21-generic is installed
+dkms is installed
+lsb-release is installed
+linux-source is installed
+x11-xserver-utils is installed
+wget is installed
+
+Platform requirements satisfied, proceeding ...
+
+-------------------------------------------------------------------
+
+Uninstalling ...
+
+DisplayLink Linux Software 5.2.14 install script called: uninstall
+Distribution discovered: Ubuntu Focal Fossa (development branch)
+Uninstalling
+Removing EVDI from kernel tree, DKMS, and removing sources.
+Stopping displaylink-driver systemd service
+Removed /etc/systemd/system/multi-user.target.wants/displaylink-driver.service.
+Removing suspend-resume hooks
+Removing udev rule
+Removing Core folder
+
+Uninstallation steps complete.
+Please note that the evdi kernel module is still in the memory.
+A reboot is required to fully complete the uninstallation process.
+Removing Displaylink Xorg config file
+
+-------------------------------------------------------------------
+
+Performing clean-up
+

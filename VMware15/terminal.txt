@@ -1,0 +1,25 @@
+------- VMware Sertup --------
+# dnf yum update
+# dnf install kernel-headers kernel-devel gcc glibc-headers
+# chmod +x Vmware-Workstation*12*.bundle
+# ./Vmware-Workstation*12*.bundle
+# 
+
+cd /usr/lib/vmware/modules/source
+
+$ sudo tar -xvf vmnet.tar
+$ sudo tar -xvf vmmon.tar
+
+$ sudo make -C vmmon-only
+$ sudo make -C vmnet-only
+
+$ sudo mkdir /lib/modules/$(uname -r)/misc
+
+$ sudo cp vmmon-only/vmmon.ko /lib/modules/$(uname -r)/misc
+$ sudo cp vmnet-only/vmnet.ko /lib/modules/$(uname -r)/misc
+
+$ sudo depmod -a
+
+
+
+$ sudo vmware-modconfig --console --install-all
