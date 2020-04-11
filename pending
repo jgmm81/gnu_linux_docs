@@ -1,84 +1,56 @@
-gnome maps ok
+no more-> usb -1 ::  GNU.Linux/kernel/usb_and_devices/g1
+no more-> remove those horizontal screen tearing artifacts on Intel graphics ok :: GNU.Linux/gpu
+no more-> use wayland UI -> check hibernate (no system crash, 1 case in very slow, the rest ok)
+no more-> fix gnome-system-monitor via snap
+no more-> set usb3 on load disable, return to x11 (problems with drap and drop in nautilus, gedit no go front window)
+no more-> changes to the usb acpi configuration, the machine could not enter sleep mode (now it works fine)
+no more -> no (re-enable usb3 on load), updates fix the problem
 
-bluetooth ok
+---------------------------------------
 
-power management ok
+gnome maps (gnome privacy services stinks... waiting fix)
 
-swap ok :: GNU.Linux/lvm_file_system
+bluetooth
 
-hibernate ok :: GNU.Linux/power_management
+power management :: GNU.Linux/power_management
 
-usb -1 ok ::  GNU.Linux/kernel/usb_and_devices/g1
+swap :: GNU.Linux/lvm_file_system
+enhanced swap area (with canonial docs) to 20GiB ok
 
-deja vu backup ok
+hibernate :: GNU.Linux/power_management
 
-simple scan and printer(s) ok
+_Déjà Dup Backup Tool
+_simple scan and printer(s)
+_band board movistar
+_touuch pad config (mouse)
+_ultra iso (vm)
+_new adwaita theme gtk3 from gnome web
+_addons gnome - 
+	Advanced Volume Mixer (set interated menu)
+	AlternateTab
 
-band board movistar ok
+enable 3d support vmware :: GNU.Linux/VMware15
 
-addons gnome - 
-	Advanced Volume Mixer (set interated menu) ok
-	AlternateTab ok
+apps: vim tree gnome-tweak-tools p7zip-full rar unrar gparted meld htop kdepartitionmanager
 
-enable 3d support vmware ok :: GNU.Linux/VMware15
+snap apps: gimp vlc sweethome3d-homedesign telegram-desktop authy
 
-tree terminal tool ok
+sweet home 3d & enhanced logo (laucher)
 
-more updates ok
+new themes wallpapers :: Pictures/Backgrounds
 
-new themes wallpapers ok
-
-touuch pad config (mouse) ok
-
-ultra iso (vm) ok
-
-update gimp ok
-
-fix gnome-system-monitor via snap ok
-
-update system, kernel 5, 18.04.3 ok
-
-update libre office 6.3 ok
-
-new adwaita theme gtk3 from gnome web ok
-
-gparted & meld is installed ok
-
-system update ok
+update libre office
 
 chage to main server (software & updates) ok
 
-fix gimp repository error ok
-
-installed unrar library ok
-
-installed sweet home 3d & enhanced logo (laucher) ok
-
-no more-> remove those horizontal screen tearing artifacts on Intel graphics ok :: GNU.Linux/gpu
-
-some os  and apps updates ok
-
 reenable hibernate option, 256mb video set (uefi), php7.2, apache2, vscode ok (LVL12-LVL13)
+apache2 service is stopped, linux kernel 5.3.0-40-generic, update libre office 6.4.1
 
-grub no splash ok
+grub no splash :: GNU.Linux/grub
 
-enhanced swap area (with canonial docs) to 20GiB ok
-
-htop, kdepartitionmanager ok
-
-authy new tokens ok
-
-use wayland UI -> check hibernate (no system crash, 1 case in very slow, the rest ok)
-
-set usb3 on load disable, return to x11 (problems with drap and drop in nautilus, gedit no go front window), new linux kernel 5.3.0-26-generic, vmware 15.5.1
-
-changes to the usb acpi configuration, the machine could not enter sleep mode (now it works fine)
-
-update to 18.04.4LTS
+new linux kernel 5.3.0-26-generic, vmware 15.5.1
 
 remove skype -> using web.skype.com via chrome, set telegram repository and firefox web.telegram.org
-
-no (re-enable usb3 on load), updates fix the problem, apache2 service is stopped, linux kernel 5.3.0-40-generic, update libre office 6.4.1
 
 system updates, pending organze photos and videos
 

@@ -1,0 +1,22 @@
+systemctl stop usb_modeswitch@1-1.6.service
+systemctl disable usb_modeswitch@1-1.6.service
+
+service --status-all
+
+cp /lib/systemd/system/usb_modeswitch@.service /home/uproject/Temp/bk---usb_modeswitch@.service
+
+rm /lib/systemd/system/usb_modeswitch@.service
+
+systemctl daemon-reload
+
+systemctl reset-failed
+
+-------------------------------------
+
+cp /home/uproject/Temp/bk---usb_modeswitch@.service /lib/systemd/system/usb_modeswitch@.service
+
+systemctl start usb_modeswitch@1-1.6.service
+
+systemctl enable usb_modeswitch@1-1.6.service
+
+systemctl status usb_modeswitch@1-1.6.service
