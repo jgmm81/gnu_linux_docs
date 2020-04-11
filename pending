@@ -56,3 +56,5 @@ system updates, pending organze photos and videos
 
 system update, authy via native app (beta), pocket in firefox registered, fix gnome modal drag windows on libre office, changes in firefox hw_acceleration, again disable usb3 on load (check usb 3.0 if work), linux kernel 5.3.0-45-generic
 
+dissable in UEFI USB 3.0 (XCHI), dissable usb_modeswitch@.service :: GNU.Linux/kernel/usb_and_devices/g1/neutral_fix
+
