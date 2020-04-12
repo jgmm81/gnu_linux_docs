@@ -10,6 +10,10 @@ no more-> again disable usb3 on load (check usb 3.0 if work)
 ---------------------------------------
 
 gnome maps (gnome privacy services stinks... waiting fix)
+--https://gitlab.gnome.org/GNOME/gnome-maps/-/issues?scope=all&utf8=%E2%9C%93&state=opened&search=location+services
+--https://gitlab.gnome.org/GNOME/gnome-maps/-/issues/187
+--https://gitlab.freedesktop.org/geoclue/geoclue/issues/111
+--https://gitlab.gnome.org/GNOME/gnome-maps/-/branches
 
 bluetooth
 
