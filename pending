@@ -1,4 +1,3 @@
-no more-> usb -1 ::  GNU.Linux/kernel/usb_and_devices/g1
 no more-> remove those horizontal screen tearing artifacts on Intel graphics ok :: GNU.Linux/gpu
 no more-> use wayland UI -> check hibernate (no system crash, 1 case in very slow, the rest ok)
 no more-> fix gnome-system-monitor via snap
@@ -67,3 +66,6 @@ dissable in UEFI USB 3.0 (XCHI), dissable usb_modeswitch@.service :: GNU.Linux/k
 
 drivers for displaylink doesn't work fine :( :: GNU.Linux/displaylink
 
+usb -1 ::  GNU.Linux/kernel/usb_and_devices/g1
+
+set cpu power frequency :: GNU.Linux/cpu/hp 840 g1
