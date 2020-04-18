@@ -1,4 +1,4 @@
-no more-> remove those horizontal screen tearing artifacts on Intel graphics ok :: GNU.Linux/gpu
+no more-> remove those horizontal screen tearing artifacts on Intel graphics :: GNU.Linux/gpu
 no more-> use wayland UI -> check hibernate (no system crash, 1 case in very slow, the rest ok)
 no more-> fix gnome-system-monitor via snap
 no more-> set usb3 on load disable, return to x11 (problems with drap and drop in nautilus, gedit no go front window)
@@ -64,8 +64,17 @@ changes in firefox hw_acceleration :: GNU.Linux/firefox
 
 dissable in UEFI USB 3.0 (XCHI), dissable usb_modeswitch@.service :: GNU.Linux/kernel/usb_and_devices/g1/neutral_fix
 
-drivers for displaylink doesn't work fine :( :: GNU.Linux/displaylink
-
-usb -1 ::  GNU.Linux/kernel/usb_and_devices/g1
+usb -1 ::  GNU.Linux/kernel/usb_and_devices/g1/-1
 
 set cpu power frequency :: GNU.Linux/cpu/hp 840 g1
+
+-> drivers for displaylink doesn't work fine on X11 :( :: GNU.Linux/displaylink
+
+Apply Wayland (interface server) after displaylink drivers are installed (UNDER TESTS) :: GNU.Linux/displaylink
+--setup Intel graphics :: GNU.Linux/displaylink
+--set changes in firefox hw_acceleration :: GNU.Linux/firefox
+--set to 25 [about:config, mousewheel.min_line_scroll_amount] :: GNU.Linux/displaylink
+
+Invalid usb_open Permission denied (solution fix ms_mouse_wheel on wake up system) :: GNU.Linux/kernel/usb_and_devices/g1/ubuntu_20.04_beta
+
+

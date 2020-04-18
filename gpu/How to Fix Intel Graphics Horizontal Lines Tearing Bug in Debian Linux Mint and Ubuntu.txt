@@ -13,7 +13,7 @@ Please support my work on https://www.patreon.com/neoncipher
 -----------------------------------
 lspci -nn | egrep -i "3d|display|vga"
 sudo mkdir /etc/X11/xorg.conf.d
-sudo nano /etc/X11/xorg.conf.d/20-intel.conf
+sudo vim /etc/X11/xorg.conf.d/20-intel.conf
 ---------------------------------
 Section "Device"
    Identifier  "Intel Graphics"

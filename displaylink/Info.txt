@@ -1,3 +1,5 @@
 https://github.com/AdnanHodzic/displaylink-debian
 
 https://classicforum.manjaro.org/index.php
+
+NOTE: Run better on Wayland (display server) :: https://wayland.freedesktop.org/faq.html
