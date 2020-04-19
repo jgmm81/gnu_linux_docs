@@ -73,8 +73,8 @@ set cpu power frequency :: GNU.Linux/cpu/hp 840 g1
 Apply Wayland (interface server) after displaylink drivers are installed (UNDER TESTS) :: GNU.Linux/displaylink
 --setup Intel graphics :: GNU.Linux/displaylink
 --set changes in firefox hw_acceleration :: GNU.Linux/firefox
---set to 25 [about:config, mousewheel.min_line_scroll_amount] :: GNU.Linux/displaylink
+--set to 40 [about:config, mousewheel.min_line_scroll_amount]
 
-Invalid usb_open Permission denied (solution fix ms_mouse_wheel on wake up system) :: GNU.Linux/kernel/usb_and_devices/g1/ubuntu_20.04_beta
+Invalid usb_open Permission denied (HELPED ms_mouse_wheel on wake up system) :: GNU.Linux/kernel/usb_and_devices/g1/ubuntu_20.04_beta
 
 
