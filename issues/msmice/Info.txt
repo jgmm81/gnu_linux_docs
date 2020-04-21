@@ -1,0 +1,18 @@
+https://sourceforge.net/projects/resetmsmice/
+
+https://github.com/paulrichards321/resetmsmice
+
+-------------------
+
+dpkg -i resetmsmice_1.1.3_amd64.deb
+
+cat > /lib/systemd/system-sleep/resetmsmice_fix.sh << EOL
+#!/bin/bash
+/usr/bin/resetmsmice
+exit 0
+EOL
+
+chmod +x /lib/systemd/system-sleep/resetmsmice_fix.sh
+
+-> Launch "Microsoft Mouse Settings" and ENABLE boot option
+/usr/bin/resetmsmice-gui

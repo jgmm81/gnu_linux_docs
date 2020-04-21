@@ -75,6 +75,9 @@ Apply Wayland (interface server) after displaylink drivers are installed (UNDER 
 --set changes in firefox hw_acceleration :: GNU.Linux/firefox
 --set to 40 [about:config, mousewheel.min_line_scroll_amount]
 
-Invalid usb_open Permission denied (HELPED ms_mouse_wheel on wake up system) :: GNU.Linux/kernel/usb_and_devices/g1/ubuntu_20.04_beta
+colord.service issue :: GNU.Linux/kernel/usb_and_devices/g1/ubuntu_20.04_beta
+
+fix MS Mouse wheel issue on system wake up :: GNU.Linux/issues/msmice
+
 
 
