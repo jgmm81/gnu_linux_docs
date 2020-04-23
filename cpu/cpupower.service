@@ -1,9 +1,0 @@
-[Unit]
-Description=CPU ondemand
-
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/cpupower --cpu all frequency-set --max 2.20GHz
-
-[Install]
-WantedBy=multi-user.target

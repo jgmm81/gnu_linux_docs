@@ -5,6 +5,8 @@ no more-> set usb3 on load disable, return to x11 (problems with drap and drop i
 no more-> changes to the usb acpi configuration, the machine could not enter sleep mode (now it works fine)
 no more-> no (re-enable usb3 on load), updates fix the problem
 no more-> again disable usb3 on load (check usb 3.0 if work)
+no more-> _new adwaita theme gtk3 from gnome web
+mo more-> _AlternateTab
 
 ---------------------------------------
 
@@ -28,10 +30,10 @@ _simple scan and printer(s)
 _band board movistar
 _touuch pad config (mouse)
 _ultra iso (vm)
-_new adwaita theme gtk3 from gnome web
 _addons gnome - 
-	Advanced Volume Mixer (set interated menu)
-	AlternateTab
+	_Advanced Volume Mixer (set interated menu)
+	_OpenWeather
+
 
 enable 3d support vmware :: GNU.Linux/VMware15
 
@@ -74,8 +76,6 @@ Apply Wayland (interface server) after displaylink drivers are installed (UNDER 
 --setup Intel graphics :: GNU.Linux/displaylink
 --set changes in firefox hw_acceleration :: GNU.Linux/firefox
 --set to 40 [about:config, mousewheel.min_line_scroll_amount]
-
-colord.service issue :: GNU.Linux/kernel/usb_and_devices/g1/ubuntu_20.04_beta
 
 fix MS Mouse wheel issue on system wake up :: GNU.Linux/issues/msmice
 

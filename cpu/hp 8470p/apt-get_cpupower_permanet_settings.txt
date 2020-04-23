@@ -1,0 +1,60 @@
+## site:
+## https://blog.sleeplessbeastie.eu/2015/11/09/how-to-set-cpu-governor-at-boot/
+
+
+###########################
+
+
+mkdir -p /opt/cpuondemand
+
+vim /opt/cpuondemand/run_cpuondemand.sh
+
+Script -------------------------------------------------------------
+
+#!/bin/bash
+## for the CPU Governor and keep it running
+
+LOG_FILE=/opt/cpuondemand/startup.log
+
+echo "---------------------------" | tee >> "${LOG_FILE}"
+date | tee >> "${LOG_FILE}"
+
+#Set seconds to sleep according machine speed for wait to OS load
+sleep 25
+
+apt-get install -y linux-tools-common linux-tools-$(uname -r) 2>&1 | tee >> "${LOG_FILE}"
+
+/usr/bin/cpupower --cpu all frequency-set --max 2.20GHz 2>&1 | tee >> "${LOG_FILE}"
+
+date | tee >> "${LOG_FILE}"
+echo "---------------------------" | tee >> "${LOG_FILE}"
+
+End script----------------------------------------------------------
+
+chmod 755 /opt/cpuondemand/run_cpuondemand.sh
+
+vim /opt/cpuondemand/cpupower.service
+
+Script -------------------------------------------------------------
+
+[Unit]
+Description=CPU ondemand
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /opt/cpuondemand/run_cpuondemand.sh
+
+[Install]
+WantedBy=multi-user.target
+
+End script----------------------------------------------------------
+
+chmod 755 /opt/cpuondemand/cpupower.service
+
+ln -s /opt/cpuondemand/cpupower.service /etc/systemd/system/cpupower.service
+
+systemctl daemon-reload
+
+systemctl start cpupower.service
+
+systemctl enable cpupower.service
