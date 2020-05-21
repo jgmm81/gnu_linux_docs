@@ -1,0 +1,9 @@
+https://serverfault.com/questions/376128/using-trickle-to-slow-down-browser
+
+---------------
+
+sudo apt-get install trickle
+
+sudo vim /usr/share/applications/insync.desktop
+
+trickle -d 256 -u 128 insync start
