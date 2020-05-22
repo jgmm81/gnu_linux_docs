@@ -1,3 +1,0 @@
-sudo vim /usr/share/applications/insync.desktop
-
-trickle -d 256 -u 128 insync start
