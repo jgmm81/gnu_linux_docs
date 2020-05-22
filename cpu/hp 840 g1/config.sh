@@ -1,6 +1,6 @@
 #!/bin/bash
 # Set services to automatic start cpupower settings
-# Rev 1.4 2020-05-21, jgmm81@gmail.com
+# Rev 1.4.1 2020-05-21, jgmm81@gmail.com
 # Tested on: Ubuntu 20.04LTS, 
 
 CPUPOWER_PATH=/opt/cpuondemand
@@ -12,6 +12,8 @@ WAIT_SECONDS=25
 
 #Default 1.80
 MAX_CPU_GHZ=1.80
+
+apt-get install -y linux-tools-common linux-tools-$(uname -r)
 
 mkdir -p "${CPUPOWER_PATH}"
 
