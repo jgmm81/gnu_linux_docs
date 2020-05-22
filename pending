@@ -83,7 +83,7 @@ vlc player removed, freeze the UI on full screen using Wayland
 
 re-enable gnome animations (issue maximized/minimized windows very slow) 
 
-bandwidth control for some apps -> Insync :: GNU.Linux/bandwidth_control
+bandwidth and CPU control -> Insync :: GNU.Linux/Insync_setup
 
 
 
