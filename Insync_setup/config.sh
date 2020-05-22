@@ -1,6 +1,6 @@
 #!/bin/bash
 # Insync config, prevent consume all Bandwidth and CPU Resources 
-# Rev 1.1 2020-05-21, jgmm81@gmail.com
+# Rev 1.1.1 2020-05-21, jgmm81@gmail.com
 # Tested on: Ubuntu 20.04LTS with GNOME, 
 
 apt install -y trickle cpulimit sed
@@ -15,12 +15,12 @@ BW_MAX_DOWNLOAD=256
 BW_MAX_UPLOAD=128
 
 GNOME_DESKTOP_LAUNCHER=/usr/share/applications/insync.desktop
-GNOME_AUTOSTART_LAUCHER="/home/${ACTUAL_USER}/.config/autostart/insync.desktop"
+GNOME_AUTOSTART_LAUNCHER="/home/${ACTUAL_USER}/.config/autostart/insync.desktop"
 
 TRICKLE_CONFIG="s/^Exec=.*$/Exec=trickle -d ${BW_MAX_DOWNLOAD} -u ${BW_MAX_UPLOAD} insync start/"
 
 sed -i "${TRICKLE_CONFIG}" ${GNOME_DESKTOP_LAUNCHER}
-[[ -f "${GNOME_AUTOSTART_LAUCHER}" ]] && sed -i "${TRICKLE_CONFIG}" ${GNOME_AUTOSTART_LAUCHER}
+[[ -f "${GNOME_AUTOSTART_LAUNCHER}" ]] && sed -i "${TRICKLE_CONFIG}" ${GNOME_AUTOSTART_LAUNCHER}
 
 ###CPU Limit -> make service autosart ####
 
