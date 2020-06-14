@@ -12,7 +12,7 @@ CPU_MAX_USAGE=30
 
 # Default Bandwidth: Download 256 / Upload 128
 BW_MAX_DOWNLOAD=256
-BW_MAX_UPLOAD=128
+BW_MAX_UPLOAD=70
 
 GNOME_DESKTOP_LAUNCHER=/usr/share/applications/insync.desktop
 GNOME_AUTOSTART_LAUNCHER="/home/${ACTUAL_USER}/.config/autostart/insync.desktop"
