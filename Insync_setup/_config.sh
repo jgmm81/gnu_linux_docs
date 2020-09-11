@@ -8,7 +8,7 @@ apt install -y trickle cpulimit sed
 ACTUAL_USER=$(who | awk '{print $1}')
 
 #In percent, default is 30
-CPU_MAX_USAGE=30
+CPU_MAX_USAGE=100
 
 # Default Bandwidth (KB/sec): Download 256 / Upload 128
 BW_MAX_DOWNLOAD=256

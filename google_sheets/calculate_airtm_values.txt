@@ -1,0 +1,48 @@
+/** @OnlyCurrentDoc */
+
+const airtm_buy_commission = 0.37;
+const airtm_sell_commission = 0.40;
+
+function fixFloat(number){
+  return parseFloat(number.toFixed(2));
+}
+  
+function AIRTM_TO_BUY(rate_buy, local_amount) {
+  //Value in AIRTM panel 
+  return fixFloat((local_amount/rate_buy) - airtm_buy_commission);
+}
+
+function AIRTM_DIRECT_SELL_TO_LOCAL_CURRENCY(dollar_amount, rate_sell) {
+  return fixFloat(rate_sell * (dollar_amount - airtm_sell_commission));
+}
+
+function AIRTM_DETAILS_BEFORE_TO_SELL(rate_buy, rate_sell, local_amount, index_return_info) {
+  //Value in AIRTM panel (local currency to $)
+  var amount_to_buy = AIRTM_TO_BUY(rate_buy, local_amount);
+  
+  //Commission on (local currency)
+  var sell_commission_local = (rate_sell * airtm_sell_commission);  
+   
+  //Final ammount if you want sell ($ to local currency)
+  var sell_amount_local = (rate_sell * amount_to_buy) - sell_commission_local;
+  
+  //Lost money in local currency
+  var lost_money_local =  fixFloat(local_amount - sell_amount_local);
+  
+  //Lost money in $
+  var lost_money = fixFloat((lost_money_local / rate_sell) - airtm_sell_commission);
+  
+  //Final value in $ added to AIRTM
+  var final_money = (amount_to_buy - lost_money);
+  
+  var info = [
+    amount_to_buy,    
+    sell_amount_local,
+    lost_money * -1,
+    lost_money_local * -1,
+    sell_commission_local * -1,
+    final_money
+  ];
+  
+  return info[index_return_info];
+}
