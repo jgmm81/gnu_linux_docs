@@ -35,4 +35,4 @@ resolvconf -u
 #systemd-resolve --status | grep 'DNS Servers' -A2
 #systemctl status resolvconf.service
 
-systemd-resolve --status
+#systemd-resolve --status
