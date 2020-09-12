@@ -1,6 +1,6 @@
 #!/bin/bash
 # Set automati DNS using resolv.conf for Debian derivations
-# Rev 1.0 2020-09-09, jgmm81@gmail.com
+# Rev 1.0 2020-09-12, jgmm81@gmail.com
 # Tested on: Ubuntu 20.04LTS, 
 
 # More Info
@@ -9,7 +9,7 @@
 
 RESOLV_HEAD_FILE="/etc/resolvconf/resolv.conf.d/head"
 
-apt-get install -y resolvconf sed
+apt-get install -y resolvconf
 
 systemctl enable resolvconf.service
 systemctl start resolvconf.service
