@@ -1,0 +1,87 @@
+/etc/X11/imwheel/imwheelrc
+
+OK (Logitech M510) -----------------
+".*"
+None, Left, Alt_L|Left
+None, Right, Alt_L|Right
+None, Thumb1, Page_Up
+None, Thumb2, Page_Down
+
+Or
+
+"^Navigator$"
+None, Left, Alt_L|Left
+None, Right, Alt_L|Right
+None, Thumb1, Page_Up
+None, Thumb2, Page_Down
+
+Or
+
+"^chromium$"
+None, Left, Alt_L|Left
+None, Right, Alt_L|Right
+None, Thumb1, Page_Up
+None, Thumb2, Page_Down
+None,      Up,   Button4, 2
+None,      Down, Button5, 2
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+Or
+
+".*"
+None, Left, Alt_L|Left
+None, Right, Alt_L|Right
+None, Thumb1, Page_Up
+None, Thumb2, Page_Down
+None,      Up,   Button4, 5
+None,      Down, Button5, 5
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+
+TESTS---------------
+
+:::only wheel speed::
+None,      Up,   Button4, 1
+None,      Down, Button5, 1
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+"^Firefox-bin$"
+None,      Up,   Button4, 16
+None,      Down, Button5, 16
+Control_L, Up,   Control_L|Button4
+Control_L, Down, Control_L|Button5
+Shift_L,   Up,   Shift_L|Button4
+Shift_L,   Down, Shift_L|Button5
+
+"^chromium$"
+"^Mozilla-bin$"
+
+".*"
+
+
+
+/etc/X11/imwheel/imwheelrc 
+
+
+"^Navigator$"
+
+
+None, Left, Control_L|Page_Up
+None, Right, Control_L|Page_Down
+
+
+None, Button6, Control_L|Page_Up
+None, Button7, Control_L|Page_Down
+
+
+None, Left, Alt_L|Left
+None, Right, Alt_L|Right

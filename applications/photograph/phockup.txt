@@ -1,0 +1,29 @@
+default-----
+
+phockup  /media/uproject/SYSBKP003/Source/ /media/uproject/SYSBKP003/Go/  --date="YYYY/MM - M/DD" --move
+
+
+ok whatsapp files (internal memory copy direct)-----
+
+phockup  /media/uproject/SYSBKP003/Source/ /media/uproject/SYSBKP003/Go/ --date="YYYY/MM - M/DD" --move --regex="(.*[_-](?P<year>\d{4})(?P<month>\d{2})(?P<day>\d{2})[_-]?\w.*)"
+
+
+
+
+
+
+
+
+
+
+More tests-----
+
+phockup  /media/uproject/SYSBKP003/unknown/ /media/uproject/SYSBKP003/test/ --date="YYYY/MM - M/DD" --move --regex="(.*[_-](?P<year>\d{4})(?P<month>\d{2})(?P<day>\d{2})[_-]?\w.*)" 
+
+
+https://regex101.com/
+
+phockup  /media/uproject/SYSBKP003/unknown/ /media/uproject/SYSBKP003/test/ --original-names --date="YYYY/MM - M/DD" --move --regex="(.*[_-](?P<year>\d{4})(?P<month>\d{2})(?P<day>\d{2})[_-]?\w.*)"
+
+phockup  /media/uproject/SYSBKP003/Source/ /media/uproject/SYSBKP003/Go/ --original-names --date="YYYY/MM - M/DD" --move --regex="(.*[_-](?P<year>\d{4})(?P<month>\d{2})(?P<day>\d{2})[_-]?\w.*)"
+

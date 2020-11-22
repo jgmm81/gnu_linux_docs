@@ -1,0 +1,35 @@
+# URL: https://itectec.com/ubuntu/ubuntu-screen-tearing-on-ubuntu-xorg-20-04-with-intel-graphics/
+
+/etc/X11/xorg.conf.d/20-intel-graphics.conf ???
+
+
+-> /etc/X11/xorg.conf.d/20-intel.conf
+
+Section "Module"
+    Load "dri3"
+EndSection
+
+Section "Device"
+    Identifier  "Intel Graphics"
+    Driver      "intel"
+    Option      "DRI"   "3"
+EndSection
+
+
+
+
+
+
+
+
+old config----------
+
+
+Section "Device"
+        Identifier "Intel Graphics"
+        Driver "intel"
+#       Option "TearFree"
+        Option "SwapbuffersWait" "true"
+        Option "AccelMethod" "sna"
+EndSection
+

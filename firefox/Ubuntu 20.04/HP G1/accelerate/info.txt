@@ -1,0 +1,69 @@
+https://support.mozilla.org/en-US/questions/1232970#answer-1152853
+https://www.emkor.eu/posts/gpu-acceleration-in-firefox76/
+
+Note: Drivers for DisplayPort (Installed and enable)
+
+OK (Wayland)-------
+-> System
+    sudo apt-get install vainfo imwheel -y
+
+-> about:config
+    gfx.xrender.enabled
+    gfx.canvas.azure.accelerated    
+    widget.wayland-dmabuf-vaapi.enabled
+    media.ffvpx.enabled    
+    layers.accelerate-all
+    layers.acceleration.force-enabled   **
+    
+    - about:config (LoGitech M510)
+        general.smoothScroll.mouseWheel.durationMaxMS = 600
+        mousewheel.min_line_scroll_amount = 20
+        ---
+        mousewheel.system_scroll_override_on_root_content.enabled (true)
+        mousewheel.system_scroll_override_on_root_content.horizontal.factor = 55
+        mousewheel.system_scroll_override_on_root_content.vertical.factor= 55
+
+    - about:config (LoGitech M325)
+        general.smoothScroll.mouseWheel.durationMaxMS = 600
+        mousewheel.min_line_scroll_amount = 30
+        general.smoothScroll.mouseWheel (true)
+        general.smoothScroll.mouseWheel.durationMaxMS = 550
+        general.smoothScroll.mouseWheel.durationMinMS = 400
+        ---
+        mousewheel.system_scroll_override_on_root_content.enabled (false)
+        mousewheel.system_scroll_override_on_root_content.horizontal.factor (default)
+        mousewheel.system_scroll_override_on_root_content.vertical.factor (default)
+        
+
+-> OS:
+    Gnome Mouse Speed 90% (LoGitech M510)
+    Gnome Mouse Speed 40% (LoGitech M325)
+
+-> Launcher(mod):
+    sudo vim /usr/share/applications/firefox.desktop
+
+    Set(Exec=):
+        Exec=env MOZ_ENABLE_WAYLAND=1 MOZ_WEBRENDER=1 MOZ_DBUS_REMOTE=1 firefox (x3 modes, view pictures)
+
+    Terminal(direct run):
+        env MOZ_ENABLE_WAYLAND=1 MOZ_WEBRENDER=1 MOZ_DBUS_REMOTE=1 firefox
+
+-> sudo vim /etc/X11/xorg.conf.d/20-intel.conf
+    Section "Device"
+       Identifier  "Intel Graphics"
+       Driver      "intel"
+       Option      "TearFree"    "true"
+    EndSection
+
+-> Main CPU Limitation (cpupower.service)
+    ::NOT SET (REMOVED)::
+
+-> Support by mousewheel.sh
+    ::NO SET (Wayland special config for FF doesn't work this function)::
+
+NO-------
+
+-> about:config
+    layers.force-active (false)
+
+ 

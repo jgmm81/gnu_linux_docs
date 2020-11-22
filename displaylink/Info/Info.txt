@@ -3,3 +3,8 @@ https://github.com/AdnanHodzic/displaylink-debian
 https://classicforum.manjaro.org/index.php
 
 NOTE: Run better on Wayland (display server) :: https://wayland.freedesktop.org/faq.html
+
+
+https://wiki.archlinux.org/index.php/DisplayLink
+
+https://askubuntu.com/questions/1141291/screen-tearing-ubuntu-18-04
